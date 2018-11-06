@@ -9,12 +9,6 @@ function ucfirst(motUcFirst){
 	}
 }
 
-var helloWorld = "hello world";
-
-// var testUcFirst = ucfirst(helloWorld);
-
-// console.log(helloWorld);
-
 /* CAPITALIZE */
 
 function capitalize(motCapitalize){
@@ -74,13 +68,6 @@ function snake_case(motSnakeCase){
 		return '';
 	}
 }
-
-// var helloWorld = "hello world";
-
-// var testSnakeCase = snake_case(helloWorld);
-
-// console.log(testSnakeCase);
-
 
 /* LEET */
 
@@ -147,22 +134,15 @@ function leet(motLeet){
 	}
 }
 
-// var helloWorld = "anAco nda du";
-
-// var testLeet = leet(helloWorld);
-
-// console.log(testLeet);
-
-
 /* PROPACCESS */
 
-// function prop_access(motPropAccess){
-	// if( typeof motPropAccess === 'string' ){
+function prop_access(objectParam){
+	// if( typeof objectParam === object ){
 		
 	// }else{
 		// return '';
 	// }
-// }
+}
 
 // var helloWorld = "hello world";
 
