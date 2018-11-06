@@ -154,19 +154,19 @@ function leet(motLeet){
 // console.log(testLeet);
 
 
-/* PROPACCESSE */
+/* PROPACCESS */
 
-function prop_access(motPropAccess){
-	if( typeof motPropAccess === 'string' ){
+// function prop_access(motPropAccess){
+	// if( typeof motPropAccess === 'string' ){
 		
-	}else{
-		return '';
-	}
-}
+	// }else{
+		// return '';
+	// }
+// }
 
-var helloWorld = "hello world";
+// var helloWorld = "hello world";
 
-var testPropAccess = prop_access(helloWorld);
+// var testPropAccess = prop_access(helloWorld);
 
-console.log(testPropAccess);
+// console.log(testPropAccess);
 
