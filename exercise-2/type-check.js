@@ -2,11 +2,11 @@ function type_check_v1(arg1, arg2){
     
     if( typeof arg1 === arg2 ){
         return true;
-    }else if( typeof arg1 === null ){
+    }else if( arg1 === null && arg2 == "null" ){
         return true;
     } else if( typeof arg1 === 'undefined' ){
         return true;
-    }else if( Array.isArray(arg1) ){
+    }else if( Array.isArray(arg1) && arg2 == "array" ){
         return true;
     }
     return false;
