@@ -20,9 +20,9 @@ function type_check_v1(arg1, arg2){
 }
 
 function type_check_v2(arg1, arg2){
-    
+
     if( !type_check_v1(arg2['type'], "undefined") && !type_check_v1(arg2['value'], "undefined") ){
-        if( type_check_v1(arg1, arg2['type'] == true && arg1 == arg2['value']) ){
+        if( type_check_v1(arg1, arg2['type']) == true && arg1 == arg2['value'] ){
             return true;
         }
     }
