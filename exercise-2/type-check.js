@@ -1,9 +1,15 @@
 function type_check_v1(arg1, arg2){
     
-    if( typeof arg1 === arg2 ){console.log('yes');
+    if( typeof arg1 === arg2 ){
+        return true;
+    }else if( typeof arg1 === null ){
+        return true;
+    } else if( typeof arg1 === 'undefined' ){
+        return true;
+    }else if( isArray(arg1) ){
         return true;
     }
-console.log('nope');
+    
     return false;
 
 }
