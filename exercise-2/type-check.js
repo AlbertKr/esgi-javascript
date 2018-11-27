@@ -19,6 +19,7 @@ function myFunction(){
     console.log('test');
 }
 
+/*
 type_check_v1(1,"number");
 type_check_v1("string","number");
 type_check_v1(true,"number");
@@ -30,3 +31,4 @@ type_check_v1("string","string");
 type_check_v1([1,2,3],"array");
 type_check_v1(myFunction,"function");
 type_check_v1([1,2,3],"object");
+*/
