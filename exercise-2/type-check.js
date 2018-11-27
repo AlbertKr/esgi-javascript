@@ -4,6 +4,9 @@ function type_check_v1(arg1, arg2){
         if( arg1 === null && arg2 == "object" ){
             return false;
         }
+        if( Array.isArray(arg1) && arg2 == "object" ){
+            return false;
+        }
         return true;
     }else if( arg1 === null && arg2 == "null" ){
         return true;
@@ -15,6 +18,8 @@ function type_check_v1(arg1, arg2){
     return false;
 
 }
+
+console.log(type_check_v1([1,2,3],"object"));
 
 /*
 var myUndefined = undefined;
