@@ -19,7 +19,18 @@ function type_check_v1(arg1, arg2){
 
 }
 
-console.log(type_check_v1([1,2,3],"object"));
+function type_check_v2(arg1, arg2){
+    
+    if( !type_check_v1(arg2['type'], "undefined") && !type_check_v1(arg2['value'], "undefined") ){
+        if( type_check_v1(arg1, arg2['type'] == true && arg1 == arg2['value']) ){
+            return true;
+        }
+    }
+    
+   return false;
+}
+
+console.log(type_check_v2("foo", {type:"string", value:"foo"}));
 
 /*
 var myUndefined = undefined;
