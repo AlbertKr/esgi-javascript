@@ -1,6 +1,9 @@
 function type_check_v1(arg1, arg2){
     
     if( typeof arg1 === arg2 ){
+        if( arg1 === null && arg2 == "object" ){
+            return false;
+        }
         return true;
     }else if( arg1 === null && arg2 == "null" ){
         return true;
