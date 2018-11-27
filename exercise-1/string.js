@@ -136,17 +136,17 @@ function leet(motLeet){
 
 /* PROPACCESS */
 
-function prop_access(objectParam){
-	// if( typeof objectParam === object ){
-		
-	// }else{
-		// return '';
-	// }
+function prop_access(input, path){
+	
+	var pathArray = path.split(".");
+	for(var i = 0; i < pathArray.length; i++){
+		if( input[pathArray[i]] === undefined ){
+			console.log('path not exist');
+			return null;
+		}
+		input = input[pathArray[i]];
+	}
+
+	return input;
 }
-
-// var helloWorld = "hello world";
-
-// var testPropAccess = prop_access(helloWorld);
-
-// console.log(testPropAccess);
 
